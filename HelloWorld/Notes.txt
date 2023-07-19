@@ -1,0 +1,41 @@
+• Running a project
+    ○ Go build
+        § Like go run but just to compile the file to an exe file
+        § Need to separately execute the exe file
+    ○ Go run 
+        § Compiles and instantly executes the files provided
+    ○ Go fmt
+        § Formats the codes in the current directory
+    ○ Go install and Go get
+        § To access other libraries
+    ○ Go test
+        § Runs tests associated with the current directory
+
+• Package main?
+    ○ Package is a collection of codes in .go 
+    ○ First line of code must declare which package it belongs to
+    ○ Types of packages:
+        § Executable Type
+            □ Used to do something/run/accomplish task
+        § Reusable Type
+            □ Code dependencies/libraries
+            □ Helper functions 
+    ○ Main package is used to make an executable package
+    ○ Any other package name does not create executable package
+    ○ Main package must ALWAYS have main function
+
+• Import fmt
+    ○ Used to access code present in fmt package
+    ○ Fmt is standard and included with golang
+    ○ Import links the current package with the imported package
+    ○ Also used to include custom packages
+
+• Func ()
+    ○ Func keyword
+    ○ (list of arguments) {}
+
+• File organization in a go code
+    ○ Package name
+    ○ Import statements
+    ○ Body of the file with functions and declarations
+
