@@ -2,11 +2,19 @@ package main
 
 import "fmt"
 
+var card string
+
 func main() {
-	var card string = "Ace of Spades"
 
-	card2 := "Ace of Diamonds"
-	card2 = "King of Diamonds"
+	cards := []string{"Ace of Diamonds", newCard()}
+	cards = append(cards, "King of Hearts")
 
-	fmt.Println(card, card2)
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+
+}
+
+func newCard() string {
+	return "Ace of Spades"
 }

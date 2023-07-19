@@ -1,0 +1,18 @@
+• Functions and Return Types
+	○ Func funcname (list of args) returntype { body of func return data}
+
+• Arrays and Slice
+	○ Array
+		§ Fixed length list of things
+	○ Slice
+		§ Array that can grow or shrink
+		§ Every element must be of the same type
+		§ [] datatype {val1, val2,..}
+		§ To append to the slice, use append()
+			□ Slicename = append(slicename, appendval)
+		
+• For Loop
+	○ for index, val := range slicename {
+	Body of the Loop
+	}
+	○ range iterates over the slice that we provide

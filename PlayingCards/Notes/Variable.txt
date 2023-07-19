@@ -13,4 +13,7 @@
         § variablename := valueofvariable
         § Go automatically infers the type
         § := only applies if a new variable is created, not during reassigning
+    ○ CANNOT be initialized outside a function body
+    ○ Can also declare a variable and later initialize it  
+    ○ CAN declare a variable outside a function before initializing within 
 			
