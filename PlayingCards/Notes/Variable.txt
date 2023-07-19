@@ -1,0 +1,16 @@
+• Variable declaration
+    ○ var - Variable keyword
+    ○ var nameofvariable typeofvariable = valueofvariable
+    ○ Ex: var card string = "Ace of Spades"
+    ○ Go is a static type language ( explicit declaration of the types)
+    ○ MUST declare type of variable
+    ○ Fundamental types:
+        § bool
+        § string
+        § int
+        § float64
+    ○ Alternate method:
+        § variablename := valueofvariable
+        § Go automatically infers the type
+        § := only applies if a new variable is created, not during reassigning
+			
