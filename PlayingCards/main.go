@@ -6,15 +6,12 @@ var card string
 
 func main() {
 
-	cards := []string{"Ace of Diamonds", newCard()}
-	cards = append(cards, "King of Hearts")
+	cards := newDeck()
+	hand, remainingDeck := deal(cards, 5)
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	fmt.Println("Hand:")
+	hand.print()
+	fmt.Println("Remaining Deck:")
+	remainingDeck.print()
 
-}
-
-func newCard() string {
-	return "Ace of Spades"
 }

@@ -1,0 +1,25 @@
+• Custom Type
+    ○ Give a custom name to a type that we declare
+    ○ ex: type typename [] string
+
+• Receiver for a Function
+    ○ sets methods on the variables that we create
+    ○ func (recname variabletype) funcname(listofargs) returntype {
+        Body of function
+      }
+    ○ recname contains the actual copy of the variable that can be used within the function
+    ○ variabletype declares that all the variables of this type can call the function on itself
+    ○ doesn't use keywords like this and self to call upon itself, needs a recname mandatorily
+    ○ Conventions demand usage of few letter names as recname (abbreviated forms)
+
+• Subset of a slice
+    ○ slicename[includedstartindex : excludedendindex ]
+    ○ slicename[: excludedindex]  -- from start of the slice to the mentioned index
+    ○ slicename[includedindex : ] -- from included index to end of the slice
+
+• Function with multiple return values
+    ○ func fname(args) (returntype1, returntype2, ...) {
+        Body of the function
+      }
+
+• Note: if x is a string type variable, then string(x) does not throw an error

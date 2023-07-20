@@ -15,5 +15,7 @@
         § := only applies if a new variable is created, not during reassigning
     ○ CANNOT be initialized outside a function body
     ○ Can also declare a variable and later initialize it  
-    ○ CAN declare a variable outside a function before initializing within 
-			
+    ○ CAN declare a variable outside a function before initializing within
+    ○ ALL declared variables must be used
+	○ If a variable is declared but never used, name it with an underscore _ to tell Go that we declared but won't be using it
+
