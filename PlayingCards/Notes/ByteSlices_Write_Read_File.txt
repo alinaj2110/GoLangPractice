@@ -1,0 +1,12 @@
+• Byte Slices
+    ○  represents string in terms of ascii
+    ○ To convert a string into byte slice: (Type Conversion)
+    ○ [] byte ("String value")
+
+* Writing to a File
+    ○ package io/ioutil
+    ○ ioutil.WriteFile(filename, []byte(data), file permissions) --> error
+
+* Reading from a file
+    ○ package io/ioutil
+    ○ ioutil.ReadFile(filename) --> [] byte, error
