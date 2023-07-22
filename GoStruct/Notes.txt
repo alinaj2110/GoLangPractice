@@ -1,0 +1,23 @@
+* Struct
+    * To make custom datatypes
+    * Syntax:
+        type sname struct {
+            field1 datatype1
+            field2 datatype2
+            .
+            .
+            .
+        }
+    * Fields are NOT separated by comma
+    * Declaring a new Struct:
+        varname := sname {val1, val2, ...}  //Interprets in the order defined in the struct
+        OR
+        varname:= sname {field1: val1, field2: val2}
+        OR
+        var varname sname
+    * Accessing fields:
+        sname.field1 = newval
+    * Embedding struct
+        fieldname structname
+    
+    
