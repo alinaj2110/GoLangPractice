@@ -10,3 +10,8 @@
 * Reading from a file
     ○ package io/ioutil
     ○ ioutil.ReadFile(filename) --> [] byte, error
+
+* Random Generation
+    * to get different seed everytime: time.Now().UnixNano()
+    * to create a new random source: rand.NewSource(seed_val)
+    * to create a new random generator: rand.New(source)
