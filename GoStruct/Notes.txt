@@ -1,4 +1,5 @@
 * Struct
+    * Value type
     * To make custom datatypes
     * Syntax:
         type sname struct {
@@ -19,5 +20,48 @@
         sname.field1 = newval
     * Embedding struct
         fieldname structname
+
+NOTE: Go is a pass by value language
+
+* Structs and Pointers
+    * & - to retrieve the address of the variable
+    * *datatype - pointer of the datatype
+    * *pointer - retrieves the value stored at the area pointed by pointer
+    * NOTE: shortcut - when passing a datatype where a pointer to that datatype is needed, Go automatically does pass by reference
+    * Slices are sent pass by reference, not pass by value
+
+* Value Types vs Reference Types
+    * Value Types:
+        require pointers to modify the actual data within a function
+        int, float, string, bool, Structs
+    * Reference Types:
+        do not need to worry about pointers with these Types
+        slices, maps, channels, pointers, functions
+    * Slice datatype
+        stores a struct having | len | capacity | ptr to head of array | along with array containing the values
+        when passed to a function, Go makes a copy of the above struct but the ptr still points to the same array, hence no need for additional pointer
+
+* Maps
+    * Reference Type
+    * similar to dict in python
+    * all the keys have to be of the same type; similar with values
+    * Syntax:
+        mname := map[keytype]valtype {
+            key1: val1,
+            key2: val2,
+            .
+            .
+            .
+        }
+        OR
+        var mname map[keytype]valtype
+        OR
+        mname := make(map[keytype]valtype)
+    * just like in dict, to add a new pair, just do
+        mname[newkey] = newval
+    * Iterating through the map:
+        for key, value := range mname {
+
+        }
     
     

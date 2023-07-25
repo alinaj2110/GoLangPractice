@@ -21,5 +21,26 @@ func main() {
 			pincode: 12345678,
 		},
 	}
-	fmt.Printf("%+v", sample)
+	sample.updateName("Anne")
+	sample.print()
+
+	books := map[string]int{"book1": 2023, "book2": 2021, "book3": 2022}
+	print(books)
+
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
+}
+
+func (p *person) updateName(fname string) {
+	(*p).firstname = fname
+}
+
+func print(m map[string]int) {
+
+	for k, v := range m {
+		fmt.Println("Key:", k, " Value:", v)
+	}
+
 }
