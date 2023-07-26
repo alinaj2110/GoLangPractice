@@ -11,3 +11,6 @@
     * Not a generic type
     * are implicit, i.e. we dont have to manually mention a struct is of that interface but we should ensure our struct has all those specified member functions
     * 
+
+* Standard Interfaces
+    * 

@@ -1,0 +1,20 @@
+* Concurrent Programming
+    * go funcname()
+    * creates a new thread to run the funcname()
+    * Go scheduler to coordinate the working of the go routines 
+    * Main routines and Child routines
+    
+* Channels
+    * intermediate communication channel between routines
+    * data in a channel must all be of same type
+    * channelname := make(chan datatype)
+    * channelname <- value      //sends value as data to the channel
+    * varname <- channelname    //receive a value through the channel and assign it to variable
+    * fname(<-channelname)      //directly passes the value obtained into the function call
+
+* Blocking Channels
+    * main routine waits when receiving from channel
+
+* Function Literals
+    * like lambda function/anonymous function for go
+    * func (arglist) {}
