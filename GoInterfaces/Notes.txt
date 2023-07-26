@@ -1,0 +1,13 @@
+* Interface
+    * Helps in reusability of code
+    * type iname interface {
+        member functions
+        .
+        .
+        .
+      }
+    * if another type in the program has the member function returning same type specified in the interface, then it is an honourary member of the interface
+    * the member functions must have types of arguments and return type
+    * Not a generic type
+    * are implicit, i.e. we dont have to manually mention a struct is of that interface but we should ensure our struct has all those specified member functions
+    * 
